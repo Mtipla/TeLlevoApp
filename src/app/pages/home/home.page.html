@@ -1,0 +1,48 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+
+    <ion-toolbar>
+      <ion-title>Conductor {{usuario}} </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-list lines="full">
+      <ion-item>
+        <ion-button fill="clear"  color="dark">Perfil</ion-button>
+      </ion-item>
+      <ion-item>
+        <ion-button fill="clear" routerLink="/home-sin-a" color="dark">Modo de viaje</ion-button>
+      </ion-item>
+      <ion-item>
+        <ion-button fill="clear" routerLink="/login" color="dark">Cerrar sesion</ion-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button>
+
+        </ion-menu-button>
+      </ion-buttons>
+      <ion-title>Bienvenido {{usuario}}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <div class="wrapper">
+      <div class="ion-activatable ripple-parent custom-parent rectangle" routerLink="/pro-v">
+        <p class="para">Programar viaje</p> <img class="imgn" src="../../../assets/img/auto_a-removebg-preview.png" alt=""><ion-ripple-effect> </ion-ripple-effect>
+      </div>
+      <div class="ion-activatable ripple-parent custom-parent rectangle" routerLink="/v-viaje">
+        <p class="para">Ver viajes</p> <img class="imgn" src="../../../assets/img/agenda_r.png" alt=""><ion-ripple-effect> </ion-ripple-effect>
+
+      </div>
+
+    </div>
+  </ion-content>
+</div>

@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Iniciar sesion</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+  <div class="form">
+    <img src="../../../assets/img/splash_img.png" alt="" srcset="">
+    <ion-item>
+      <ion-input labelPlacement="floating" value="" [(ngModel)]="usuario">
+        <div slot="label">Usuario </div>
+      </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="Contraseña" labelPlacement="floating" type="password" [(ngModel)]="contrasena"></ion-input>
+    </ion-item>
+  </div>
+  <div class="btn">
+    <div class="boton">
+      <ion-button (click)="validar_cond()" color="warning">Iniciar Conductor </ion-button>
+    </div>
+    <div class="boton">
+      <ion-button (click)="validar_pasaj()" color="warning">Iniciar Pasajero</ion-button>
+    </div>
+    <div class="boton">
+      <ion-button routerLink="/recp-c" fill="clear" size="small">Recuperar Contraseña</ion-button>
+    </div>
+  </div>
+</ion-content>

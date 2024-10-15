@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Historial Viajes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <ion-grid>
+      <ion-row *ngFor="let via of lista_viajes">
+        <ion-col>{{via.destino}}</ion-col>
+        <ion-col>    </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  
+</ion-content>
+

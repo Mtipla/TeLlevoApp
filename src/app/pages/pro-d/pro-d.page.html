@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Prepara Viaje</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="/home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div>
+    <ion-input [(ngModel)]="n_viaje.partida" label="Partida" placeholder="Duoc"></ion-input>
+    <ion-input [(ngModel)]="n_viaje.destino" label="Destino" placeholder="Casa"></ion-input>
+    <ion-input [(ngModel)]="n_viaje.capacidad_vehiculo" label="Capacidad" placeholder="0"></ion-input>
+    <ion-input [(ngModel)]="n_viaje.precio" label="Precio" placeholder="0"></ion-input>
+    <ion-input [(ngModel)]="n_viaje.lugar_encuentro" label="Lugar Encuentro" placeholder="Entrada"></ion-input>
+    <ion-button (click)="guardar()">Guardar</ion-button>
+  </div>
+</ion-content>
