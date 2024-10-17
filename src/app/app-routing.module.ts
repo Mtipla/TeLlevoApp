@@ -51,6 +51,10 @@ const routes: Routes = [
     path: 'crud',
     loadChildren: () => import('./pages/crud/crud.module').then( m => m.CrudPageModule)
   },
+  {
+    path: 'crud-api',
+    loadChildren: () => import('./pages/crud-api/crud-api.module').then( m => m.CrudApiPageModule)
+  },
 
 ];
 
